@@ -14,7 +14,7 @@ setup(
     license="BSD",
     keywords="Asciibinder, ascii_binder_search, ascii_binder_search_elastic_search",
     url="https://github.com/smitthakkar96/ascii_binder_search_plugin",
-    install_requires=['lxml', 'pyyaml', 'xmltodict', 'beautifulsoup4', 'xmltodict'],
+    install_requires=['lxml', 'pyyaml', 'xmltodict', 'beautifulsoup4', 'xmltodict', 'elasticsearch'],
     include_package_data=True,
     zip_safe=False,
     namespaces=[
