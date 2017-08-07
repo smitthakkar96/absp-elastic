@@ -44,7 +44,6 @@ class ElasticSearch(Indexer):
 
     def prepare_index(self):
         dist = pkg_resources.get_distribution('ascii_binder_search_elastic_search')
-        self.backend_static_dir = os.path.join(dist.location, 'ascii_binder_search_elastic_search/static')
         self.es = Elasticsearch(hosts=[self.backend_args.elastic_search_url])
         if self.es.indices.exists(self.backend_args.index_name):
             print("deleting '%s' index..." % (self.backend_args.index_name))
